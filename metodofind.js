@@ -1,0 +1,8 @@
+db.pilotosf1.find ()
+db.pilotosf1.find ({"victorias": {$gte: 15}})
+db.pilotosf1.find ({"victorias": {$gte: 91},"nacionalidad": "alemán"})
+db.pilotosf1.find ({"campeonatos": {$lt: 1}})
+db.pilotosf1.find ({"victorias": {$eq: 9}})
+db.pilotosf1.find ({"victorias": {$ne: 91}})
+db.pilotosf1.find ({$and: [{"campeonatos": {$eq: 3}}, {"victorias": {$gt: 40}}]})
+db.pilotosf1.find ({$or: [{"campeonatos": {$lt: 1}}, {"nacionalidad": "neerlandés"}]})
